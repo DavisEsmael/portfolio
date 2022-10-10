@@ -217,6 +217,10 @@
   width: 90%;
 }
 
+.project {
+  text-decoration: none;
+}
+
 .card {
   width: 300px;
   height: 300px;
