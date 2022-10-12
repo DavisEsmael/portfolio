@@ -21,7 +21,7 @@
   padding: 0 112px;
 
   background-color: #384653;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -167,6 +167,8 @@
 .profile {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .name,
