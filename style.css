@@ -21,49 +21,11 @@
   padding: 0 112px;
 
   background-color: #384653;
-  background-image: url(./images/perfil.png);  
-  background-position: 7%;
-  background-repeat: no-repeat;
-  background-size: contain;
-
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;  
-}
-
-.name,
-.job {
-  text-transform: uppercase;
-  letter-spacing: 4px;
-}
-
-.name {
-  font-size: 50px;
-}
-
-.social-media {
-  margin-top: 1rem;
-  display: flex;
-}
-
-.github,
-.linkedin {
-  text-decoration: none;
-  color: #1E1E2A;
-  font-weight: 700;
-  padding: 1rem 4rem;
-  border: 1px solid #1E1E2A;
-  min-width: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.5s ease-in-out;
-}
-
-.linkedin:hover,
-.github:hover {
-  background-color: #fff;
 }
 
 /* MENU HAMBURGUER */
@@ -198,6 +160,47 @@
 #toggle:checked ~ .menu-items {
   visibility: visible;
   opacity: 1;
+}
+
+/* PROFILE */
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.name,
+.job {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.name {
+  font-size: 50px;
+}
+
+.social-media {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.github,
+.linkedin {
+  text-decoration: none;
+  color: #1E1E2A;
+  font-weight: 700;
+  padding: 1rem 4rem;
+  border: 1px solid #1E1E2A;
+  min-width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+}
+
+.linkedin:hover,
+.github:hover {
+  background-color: #fff;
 }
 
 /* CARDS */
