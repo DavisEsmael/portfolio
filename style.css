@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +10,6 @@
 
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
-  max-width: 100%;
 }
 
 /* HEADER */
@@ -168,7 +169,7 @@
 }
 
 .profile-img {
-  width: auto;
+  max-width: 100%;
 }
 
 .name,
@@ -190,9 +191,9 @@
   text-decoration: none;
   color: #1E1E2A;
   font-weight: 700;
-  padding: 1rem 4rem;
+  padding: 1rem 2.125rem;
   border: 1px solid #1E1E2A;
-  min-width: 4rem;
+  min-width: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -212,6 +213,13 @@
   flex-direction: column;
   justify-content: space-evenly;
   margin: 3rem 0;
+}
+
+.projects-title {
+  font-size: 1.75rem;
+  padding-left: 1.125rem;
+  color: #384653;
+  text-transform: uppercase;
 }
 
 .projects-link {
@@ -331,4 +339,110 @@ footer {
 .footer-text {
   font-size: 0.75rem;
   color: #fff;
+}
+
+/* Media Querries */
+
+@media screen and (min-width: 992px) {
+
+/* PROFILE */
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.name, .job {
+  font-size: 2.5rem;
+}
+
+.social-media {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.github,
+.linkedin {
+  text-decoration: none;
+  color: #1E1E2A;
+  font-weight: 700;
+  padding: 1rem 4rem;
+  border: 1px solid #1E1E2A;
+  min-width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+}
+
+/* CARDS */
+
+.projects-title {
+  font-size: 2.5rem;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+}
+
+.card-wrapper::before {
+  content: '';
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: block;
+  border: 1px solid #fff;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.check {
+  font-size: 20px;
+  visibility: hidden;
+  opacity: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+  filter: unset;
+}
+
+.card:hover > .card-wrapper::before {
+  height: 192px;
+  width: 192px;
+  opacity: 1;
+}
+
+.card-wrapper:hover > .check {
+  opacity: 1;
+  visibility: visible;
+  font-size: 20px;
+}
+
+.card-text {
+  width: 40%;
+}
+
+.card-title {
+  font-size: 1.125rem;
+}
+
+.card-description {
+  font-size: 1rem; 
+}
+
 }
