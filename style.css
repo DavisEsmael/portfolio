@@ -17,8 +17,6 @@
 .header-container {
   position: relative;
 
-  height: 100vh;
-
   background-color: #384653;
 
   display: flex;
@@ -126,7 +124,7 @@
   letter-spacing: 4px;
 }
 
-/* ANIMAÇÃO DO MENU */
+/* MENU ANIMATION */
 
 #toggle:checked + .checkbox .trace:nth-child(1) {
   transform: rotate(45deg);
@@ -164,24 +162,27 @@
 .profile {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
 }
 
 .profile-img {
-  max-width: 100%;
+  max-width: 70%;
+  margin: 1rem auto 0;
+}
+
+.personal-info {
+  margin: 0 auto;
 }
 
 .name,
 .job {
   font-size: 1.25rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 0 1.25rem;
 }
 
 .social-media {
-  margin: 1rem 1.25rem;
+  margin: 1rem 0;
   display: flex;
 }
 
@@ -191,7 +192,7 @@
   text-decoration: none;
   color: #1E1E2A;
   font-weight: 700;
-  padding: 1rem 2.125rem;
+  padding: 0.5rem 1.5rem;
   border: 1px solid #1E1E2A;
   min-width: 2rem;
   display: flex;
@@ -232,10 +233,14 @@
 }
 
 .project2 {
-  background-image: url(images/spotify.png);
+  background-image: url(images/hdc-home.png);
 }
 
 .project3 {
+  background-image: url(images/spotify.png);
+}
+
+.project4 {
   background-image: url(images/pokedex.png);
 }
 
@@ -343,15 +348,26 @@ footer {
 
 /* Media Querries */
 
+@media (min-width: 768px){
+  /* PROFILE */
+  .profile-img {
+    max-width: 50%;
+    margin-top: 1rem;
+  }
+
+  .personal-info {
+    margin-left: 0;
+  }
+}
+
 @media screen and (min-width: 992px) {
 
 /* PROFILE */
-
 .profile {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .name, .job {
@@ -378,7 +394,6 @@ footer {
 }
 
 /* CARDS */
-
 .projects-title {
   font-size: 2.5rem;
   padding-left: 2rem;
