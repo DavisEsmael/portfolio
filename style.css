@@ -294,7 +294,8 @@
 }
 
 .check {
-  font-size: 20px;
+  color: #384653;
+  font-size: 16px;
   visibility: hidden;
   opacity: 0;
   font-weight: 700;
@@ -424,6 +425,7 @@ footer {
 }
 
 .check {
+  color: #384653;
   font-size: 20px;
   visibility: hidden;
   opacity: 0;
